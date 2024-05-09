@@ -4,3 +4,7 @@ This code pads characters with colons or otherwise converts them into their emoj
 
 This code was designed to run on Chrome. I cannot promise it will work on other browsers. 
 
+emojify.py is a standalone program with two options for output in the command line. 
+
+emojify.js is designed to be pasted into bookmark's URL bar, and produces output in the form of a browser alert as well as a message in the console log in the developer tools. This is important for output longer than one line in the alert box, which is impossible to highlight and copy. 
+
