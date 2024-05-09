@@ -15,4 +15,4 @@ emojify.js is designed to be pasted into a bookmark's URL bar and saved as a boo
 
 2.) Chrome: if the text in the alert box is longer than one line, it cannot be selected and highlighted. You must copy-paste it from the dev 
 
-3.) Chrome: The “(via navigator.clipboard.writeText(final).then(success_callback, failure_callback)” section of code, which is supposed to copy the bookmark’s output to the user’s clipboard, appears to miss occasionally on Chrome. It was originally introduced to make up for issues #2, but is not sufficiently reliable.
+3.) Chrome and Firefox: The part of the code that is supposed to automatically copy the emojified text to the user's clipboard (via navigator.clipboard.writeText(final).then(success_callback, failure_callback) appears to miss occasionally on Chrome and Firefox. It was originally introduced to make up for issues #2, but is not sufficiently reliable. 
