@@ -6,13 +6,24 @@ This code works best on Firefox, but also functions on Chrome. I have not tested
 
 emojify.py is a standalone python program with two options for the format of the output. I run it in the terminal and then copy the output to later paste it into a slack message.
  
-emojify.js is designed to be pasted into a bookmark's URL bar and saved as a bookmark. It produces output in the form of a browser alert as well as a message in the console log in the developer tools. I am working on the section that also copies the output to the user’s clipboard automatically but that is not 100% functional yet. 
- 
+emojify.js is designed to be pasted into a bookmark's URL bar and saved as a bookmark. It produces output in the form of a browser alert as well as a message in the console log in the developer tools. 
+
+<img width="518" alt="image" src="https://github.com/timetowinanother/emojifun/assets/17504144/49e9204c-5fa6-4017-86d5-2ac90d5353aa">
+
   
   ## Known issues 
   
-1.) Chrome: the emojify.js bookmark cannot be activated in a new Chrome browser window. You must actually be at a website first. 
+1.) Chrome: the emojify.js bookmark cannot be activated in a new Chrome browser window. The browser must be pointed at any website before the user clicks the bookmark. 
 
-2.) Chrome: if the text in the alert box is longer than one line, it cannot be selected and highlighted. You must copy-paste it from the dev 
+2.) Chrome: if the text in the alert box is longer than one line, it cannot be selected and copied. You must copy-paste it from the console tab in the developer tools window output 
 
-3.) Chrome and Firefox: The part of the code that is supposed to automatically copy the emojified text to the user's clipboard (via navigator.clipboard.writeText(final).then(success_callback, failure_callback) appears to miss occasionally on Chrome and Firefox. It was originally introduced to make up for issues #2, but is not sufficiently reliable. 
+<img width="582" alt="image" src="https://github.com/timetowinanother/emojifun/assets/17504144/345cffbb-2caa-4168-ada6-75a3e8b5683a">
+
+
+
+
+
+
+## Deprecated Features 
+
+1.) I had been using "navigator.clipboard.writeText(final)" to try to copy the results of emojify.js to the clipboard as well as displaying it, but intermittently threw "DOMException: Document is not focused" errors. When it did work, it encouraged the less-than-ideal (from an end user training perspective) behavior of encouraging end users to grant copy-to-clipboard permissions to whatever random website the browser was pointed at when the bookmark script was initiated.
