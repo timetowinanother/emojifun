@@ -6,9 +6,10 @@ This code is known to work well on Firefox and Safari, and also functions on Chr
 
 emojify.py is a standalone python program with two options for the format of the output. I run it in the terminal and then copy the output to later paste it into a slack message.
  
-emojify.js is designed to be pasted into a bookmark's URL bar and saved as a bookmark. When you click on the bookmark, it creates a pop-up in your browser that asks you to enter the message you want to emojify. When you press "ok", it produces a browser alert with the emojified message (as well as logging the output in the console log in the developer tools). 
+emojify.js is designed to be pasted into a bookmark's URL bar and saved as a bookmark. When you click on the bookmark, it creates a pop-up in your browser that asks you to enter the message you want to emojify. 
 <img width="444" alt="image" src="https://github.com/timetowinanother/emojifun/assets/17504144/1321599a-29a3-41c5-a919-21b36d31e522">
 
+When you press "ok", it produces a browser alert with the emojified message (as well as logging the output in the console log in the developer tools). 
 <img width="518" alt="image" src="https://github.com/timetowinanother/emojifun/assets/17504144/49e9204c-5fa6-4017-86d5-2ac90d5353aa">
 
   
